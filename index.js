@@ -1,9 +1,8 @@
 const express = require('express');
-const chrome = require('chrome-aws-lambda');
+const chrome = require('@sparticuz/chrome-aws-lambda');
 const puppeteer = require('puppeteer-core');
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 async function screenshot(url) {
     const options = process.env.AWS_REGION
@@ -49,6 +48,4 @@ app.get('/screenshot', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-});
+module.exports = app;
