@@ -1,13 +1,13 @@
 {
   "name": "screenshot-api",
   "version": "1.0.0",
-  "description": "An API to take screenshots of web pages using Puppeteer and chrome-aws-lambda",
+  "description": "An API to take screenshots of web pages using Puppeteer and @sparticuz/chrome-aws-lambda",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "@sparticuz/chrome-aws-lambda": "*",
+    "@sparticuz/chrome-aws-lambda": "^10.1.0",
     "express": "^4.18.2",
     "puppeteer-core": "^10.1.0"
   },
